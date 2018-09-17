@@ -10,7 +10,14 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Http\Request;
 
-Route::get('/', function () {
+// vue example
+Route::get('/vue', function () {
     return \View::make('pages.home');
+});
+
+// axios example
+Route::post('/axios', function (Request $request) {
+    echo json_encode($request->all());
 });

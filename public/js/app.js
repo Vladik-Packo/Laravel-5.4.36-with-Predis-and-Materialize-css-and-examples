@@ -989,10 +989,6 @@ window.Vue = __webpack_require__(35);
 
 Vue.component('example', __webpack_require__(38));
 
-var app = new Vue({
-  el: '#app'
-});
-
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -53234,6 +53230,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
         console.log('Component mounted.');
+    },
+    data: function data() {
+        return {};
     }
 });
 
